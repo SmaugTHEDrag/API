@@ -39,7 +39,7 @@
       "DB_PORT": "3306",
       "DB_USER": "thainguyen",
       "DB_PASSWORD": "Nguyen1222004",
-      "DB_NAME": "project",
+      "DB_NAME": "projectapi",
       "DB_DIALECT": "mysql"
     }
   }]
