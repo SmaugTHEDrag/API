@@ -16,9 +16,9 @@ const account = mySequel.define('account', {
         type: sequel.STRING(128),
         allowNull: false,
     },
-    full_name: {
-        type: sequel.STRING(128),
-        allowNull: true,
+    email: {
+        type: sequel.STRING(255),
+        allowNull: false,
     },
     created_by: {
         type: sequel.BIGINT(20),

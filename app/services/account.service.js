@@ -20,10 +20,10 @@ module.exports = {
     create: function(req, res) {
         try {
             const query = {};
-            query.created_by = req.body.accessAccountId;
-            query.updated_by = req.body.accessAccountId;
+            query.created_by = 1;
+            query.updated_by = 1;
             query.login_name = req.body.login_name;
-            query.full_name = req.body.full_name;
+            query.email = req.body.email;
 
             const originalPassword  =req.body.password;
 
@@ -48,7 +48,7 @@ module.exports = {
     getOne: function(req, res) {
         const id = req.params.id || '';
         try {
-            const attributes = ['id', 'login_name', 'full_name', 'created_at', 'updated_at', 'created_by', 'updated_by'];
+            const attributes = ['id', 'login_name', 'email', 'password', 'created_at', 'updated_at', 'created_by', 'updated_by'];
 
             const where = {id: id};
 
@@ -118,8 +118,8 @@ module.exports = {
         try {
             const query = {};
             query.updated_by = req.body.accessAccountId;
-            if (req.body.full_name) {
-                query.full_name = req.body.full_name;
+            if (req.body.email) {
+                query.email = req.body.email;
             }
             if (req.body.password) {
                 const originalPassword  =req.body.password;
@@ -169,7 +169,7 @@ module.exports = {
     verifyAccount: function(accessUserId, accessLoginName, callback) {
         try {
             const where = {id: accessUserId, login_name: accessLoginName};
-            const attributes = ['id', 'login_name', 'full_name'];
+            const attributes = ['id', 'login_name', 'email'];
 
             account.findOne({
                 where: where,
@@ -196,7 +196,7 @@ module.exports = {
         const password = req.body.password || '';
 
         const where = {login_name: login_name};
-        const attributes = ['id', 'login_name', 'password', 'full_name'];
+        const attributes = ['id', 'login_name', 'password', 'email'];
         account.findOne( {
             where: where,
             attributes: attributes}).then( (account)=>{
@@ -207,7 +207,7 @@ module.exports = {
                         const payload = {
                             id: account.id,
                             login_name: account.login_name,
-                            full_name: account.full_name
+                            email: account.email
                         };
                         jsonWebToken.sign(
                             payload,
