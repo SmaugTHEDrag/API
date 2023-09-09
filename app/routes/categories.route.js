@@ -16,7 +16,7 @@ module.exports = function (app) {
      *
      *
      * @apiExample Example usage:
-     * curl -i http://localhost:3000/api/v1/categories
+     * curl -i https://project-api-2625.onrender.com/api/v1/categories
      *
      *
      * @apiSuccessExample Success-Response:
@@ -53,7 +53,7 @@ module.exports = function (app) {
      * @apiParam {string} id ID of category, on params
      *
      * @apiExample Example usage:
-     * curl -i http://localhost:3000/api/v1/categories/2
+     * curl -i https://project-api-2625.onrender.com/api/v1/categories/2
      *
      * @apiSuccess {String} id the ID of category
      * @apiSuccess {String} title title of category

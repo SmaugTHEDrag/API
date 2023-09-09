@@ -59,7 +59,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/v1/books",
+					"raw": "https://project-api-2625.onrender.com/api/v1/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -95,7 +95,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/accounts/login",
+					"raw": "https://project-api-2625.onrender.com/api/v1/accounts/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -140,7 +140,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/auth/books/1",
+					"raw": "https://project-api-2625.onrender.com/api/v1/auth/books/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -185,7 +185,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/auth/categories",
+					"raw": "https://project-api-2625.onrender.com/api/v1/auth/categories",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -229,7 +229,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/auth/categories/6",
+					"raw": "https://project-api-2625.onrender.com/api/v1/auth/categories/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -252,7 +252,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/v1/categories/1",
+					"raw": "https://project-api-2625.onrender.com/api/v1/categories/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -274,7 +274,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/v1/categories",
+					"raw": "https://project-api-2625.onrender.com/api/v1/categories",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -329,7 +329,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/auth/books",
+					"raw": "https://project-api-2625.onrender.com/api/v1/auth/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -379,7 +379,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/auth/books/3",
+					"raw": "https://project-api-2625.onrender.com/api/v1/auth/books/3",
 					"protocol": "http",
 					"host": [
 						"localhost"

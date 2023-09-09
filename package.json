@@ -5,9 +5,9 @@
   "description": "An API boiled code for Nodejs, express and mysql",
   "apidoc": {
     "title": "API DOCS",
-    "version": "0.4.0",
-    "url": "http://localhost:3000",
-    "sampleUrl": "http://localhost:3000"
+    "version": "1.0.0",
+    "url": "https://project-api-2625.onrender.com",
+    "sampleUrl": "https://project-api-2625.onrender.com"
   },
   "engines": {
     "node": "18.x"
